@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color game</title><style>
+        div{
+            height:500px;
+            width:500px;
+        }
+    </style>
+</head>
+<body><div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    </div>
+
+    <script>
+    var myvar = document.querySelector("div.one,div.two,div.three");
+    myvar.style.backgroundColor = "Green Red blue";
+    myvar.style.backgroundColor = window.prompt ("Pick a color Green Red Blue");
+    </script>
+    <script>
+    // var myvar = document.querySelector("div.two");
+    //myvar.style.backgroundColor = "Red";
+    // var myvar = document.querySelector("div.three");
+    // myvar.style.backgroundColor = "Blue";
+    </script>
+</body>
+</html>
