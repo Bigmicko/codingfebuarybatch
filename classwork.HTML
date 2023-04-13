@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class work</title><style>
+   *{
+    box-sizing: border-box;
+    padding: opx;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+   main{
+    width: 100%;
+    height: 650px;
+    background-image: url("anime-2.jpg");
+    background-size: 100%;
+    animation-name: container;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+   }
+
+   div.slide{
+    width: 40%;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+    height: 420px;
+    overflow: hidden;
+}
+
+div.items{
+    color: white;
+    position: absolute;
+    text-align: center;
+    margin-left: 60px;
+}
+
+h2{
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 0.7rem;
+    font-weight: bold;
+}
+
+.welcome{
+    animation-name: slide-1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes  slide-1{
+         0%{
+            margin-top: 0px;
+         }
+         33.3%{
+            margin-top: 1000px;
+         }
+        66.7%{
+            margin-top: 1000px;
+            
+        }
+        100%{
+            margin-top: 0px;
+        }
+    }
+    .true{
+        top: 450px;
+        animation-name: slide-2;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: all;
+    }
+
+    @keyframes  slide-2{
+         0%{
+            margin-top: 1000px;
+         }
+         33.3%{
+            margin-top: 0px;
+            top:0px;
+         }
+        66.7%{
+            margin-top: 1000px;
+            
+        }
+        100%{
+            margin-top: 0px;
+        }
+    }
+
+    .trial{
+        top: 900px;
+        animation-name: slide-3;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        transition: all;
+    }
+    @keyframes  slide-3{
+         0%{
+            margin-top: 1000px;
+         }
+         33.3%{
+            margin-top: 1000px;
+        }
+        66.7%{
+            margin-top: 0px;
+            top:0px;
+        }
+        100%{
+            margin-top: 1000px;
+        }
+    }
+   @keyframes container{
+            0%{
+                background-image: url('anime-1.jpg');
+                background-size: 100%;
+                
+            }
+            33.3%{
+                background-image: url('anime-2.jpg');
+                background-size: 100%;
+               
+            }
+            67.7%{
+                background-image: url('anime-3.jpg');
+                background-size: 100%;
+                
+            }
+           100%{
+                background-image: url('anime-1.jpg');
+                background-size: 100%;
+                
+            }
+        
+        } 
+
+        button{
+            font-family: tahoma;
+            font-weight: bold;
+        }
+
+    button{
+        background-color: blue;
+        color:white;
+        border: none;
+        border-radius: 5rem;
+        font-size: 1.2rem;
+        padding: 12px 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+    }
+    </style>
+    
+    
+</head>
+<body>
+    <main>
+    <div class="container">
+<div class="slide">
+    <div class="item welcome">
+        <h2 class="welcome"> welcome to Micheal Dibashi's page</h2>
+        <button class="welcome">Get Started</button>
+    </div>
+
+    <div class="items true">
+        <h2> only those who apply <br>
+         the principles of design <br> 
+         are true designers</h2>
+         <button class="true">Get Started</button>
+    </div>
+    <div class="items trial">
+        <h2> A trial will convince you</h2>
+        <button class="trial">Get Started</button>
+    </div>
+</div>
+    </div>
+</main>
+</body>
+</html>
