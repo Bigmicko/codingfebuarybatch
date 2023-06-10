@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson</title><style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .box{
+    height: 700px;
+    width: auto;
+    text-align: center;
+  }
+
+  .btn{
+    position: absolute;
+    top: 350px;
+    right: 580px;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border-color: white;
+  }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <button class="btn">Cliick</button>
+  </div>
+
+  <script>
+    var div = document.querySelector(".box");
+    var btn = document.querySelector(".btn");
+    count = 0;
+
+    div.style.backgroundColor = 'red';
+    var colors = ['green','brown','yellow','blue','orange'];
+
+    btn.addEventListener("click",()=>{
+      div.style.backgroundColor = colors [count];
+      count++;
+
+      if(count == 6){
+        count = 0;
+        div.style.backgroundColor = colors [count];
+        count++;
+
+      }
+    })
+  </script>
+</body>
+</html>
